@@ -9,7 +9,6 @@ class CartTest {
   @Test
   void emptyCartHasTotalPriceOfZero() {
     Cart cart = new Cart();
-
     assertThat(cart.totalPrice()).isZero();
   }
 
@@ -17,8 +16,15 @@ class CartTest {
   public void addToothbrushProductThenTotalPriceIsOneDollar(){
     Cart cart = new Cart();
     cart.add("Toothbrush", 1);
-
     assertThat(cart.totalPrice()).isEqualTo(1);
+  }
+
+  @Test
+  public void addTwoToothbrushProductThenTotalPriceIsOneDollar(){
+    Cart cart = new Cart();
+    cart.add("Toothbrush", 1);
+    cart.add("Toothbrush", 1);
+    assertThat(cart.totalPrice()).isEqualTo(2);
   }
 
 }
