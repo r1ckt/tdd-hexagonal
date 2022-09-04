@@ -13,8 +13,8 @@ public class Cart {
   }
 
   public String receipt() {
-    return "*"
-        + " Total Price: $0"
-        + " *";
+    return String.format("*"
+        + " Total Price: $%s"
+        + " *", productPrice);
   }
 }
