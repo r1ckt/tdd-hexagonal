@@ -38,10 +38,10 @@ class CartTest {
   @Test
   public void emptyCartReceiptShowsZeroPrice() {
     Cart cart = new Cart();
-    assertThat(cart.receipt()).isEqualTo("*" +
-        " Cart is empty,"
+    assertThat(cart.receipt()).isEqualTo("*"
         + " Total Price: $0"
         + " *");
   }
+
 
 }
