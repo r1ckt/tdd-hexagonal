@@ -13,8 +13,26 @@ public class Cart {
   }
 
   public String receipt() {
+    if (isEmpty()) {
+      return receiptForEmptyCart();
+    }
+    return receiptForNonEmptyCart();
+  }
+
+  private boolean isEmpty() {
+    return totalPrice() == 0;
+  }
+
+  private static String receiptForEmptyCart() {
+    return "*"
+        + " Total Price: $0"
+        + " *";
+  }
+
+  private String receiptForNonEmptyCart() {
     return String.format("*"
+        + " Toothbrush $%s"
         + " Total Price: $%s"
-        + " *", totalPrice);
+        + " *", totalPrice, totalPrice);
   }
 }

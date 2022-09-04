@@ -50,6 +50,7 @@ class CartTest {
     cart.add("Toothbrush", 1);
 
     assertThat(cart.receipt()).isEqualTo("*"
+        + " Toothbrush $1"
         + " Total Price: $1" + " *");
   }
 }
