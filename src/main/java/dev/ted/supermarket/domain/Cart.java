@@ -1,4 +1,4 @@
-package dev.ted.supermarket;
+package dev.ted.supermarket.domain;
 
 public class Cart {
 

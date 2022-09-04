@@ -1,4 +1,4 @@
-package dev.ted.supermarket;
+package dev.ted.supermarket.domain;
 
 import org.junit.jupiter.api.Test;
 
