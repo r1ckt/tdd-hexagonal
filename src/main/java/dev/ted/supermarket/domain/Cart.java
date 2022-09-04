@@ -9,6 +9,6 @@ public class Cart {
   }
 
   public void add(String productName, int productPrice) {
-    this.productPrice = productPrice;
+    this.productPrice += productPrice;
   }
 }
