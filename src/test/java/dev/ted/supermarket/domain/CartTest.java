@@ -20,7 +20,7 @@ class CartTest {
   }
 
   @Test
-  public void addTwoToothbrushProductThenTotalPriceIsOneDollar(){
+  public void addTwoToothbrushProductThenTotalPriceIsTwoDollars(){
     Cart cart = new Cart();
     cart.add("Toothbrush", 1);
     cart.add("Toothbrush", 1);
