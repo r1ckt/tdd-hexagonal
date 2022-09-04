@@ -43,4 +43,13 @@ class CartTest {
         + " *");
   }
 
+  @Test
+  public void cartWithItemThenReceiptShowsItemAndPrice(){
+    Cart cart = new Cart();
+
+    cart.add("Toothbrush", 1);
+
+    assertThat(cart.receipt()).isEqualTo("*"
+        + " Total Price: $1" + " *");
+  }
 }
