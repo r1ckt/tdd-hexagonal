@@ -13,8 +13,7 @@ public class Cart {
   }
 
   public String receipt() {
-    return "*" +
-        " Cart is empty,"
+    return "*"
         + " Total Price: $0"
         + " *";
   }
